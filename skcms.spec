@@ -2,14 +2,16 @@ Summary:	skcms library from skia project
 Summary(pl.UTF-8):	Biblioteka skcms z projektu skia
 Name:		skcms
 Version:	0
-%define	gitref	a00edc64c48672d6aab25a6122e4bc0ebc2780d9
-%define	snap	20210930
+%define	gitref	30c8e303800c256febb03a09fdcda7f75d119b1b
+%define	snap	20220122
 %define	rel	1
 Release:	0.%{snap}.%{rel}
 License:	BSD
 Group:		Libraries
-Source0:	https://skia.googlesource.com/skcms/+archive/%{gitref}.tar.gz?/%{name}-%{snap}.tar.gz
-# Source0-md5:	d7292b1aa8d76e7d171ad4f2003c8c89
+#Source0:	https://skia.googlesource.com/skcms/+archive/%{gitref}.tar.gz?/%{name}-%{snap}.tar.gz
+# tarball is regenerated on each download, use distfiles
+Source0:	%{name}-%{snap}.tar.gz
+# Source0-md5:	456c87e48d1efc168350714f539893ca
 URL:		https://skia.googlesource.com/skcms
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
